@@ -22,5 +22,49 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  outline: none;
+}
+
+label {
+  color: var(--color-cyan-100);
+}
+
+input {
+  padding: 4px 8px;
+  border: 1px solid white;
+  border-radius: 8px;
+  outline: none;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.homeLinks{
+  width: 45px;
+  height: 45px;
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid var(--color-cyan-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.homeLinks:hover {
+  border: none;
+  color: var(--color-cyan-400);
+  box-shadow: 0 0 6px var(--color-cyan-400);
+  scale: 1.1;
+  transition: all 0.3s;
+}
+
+.customShadow {
+  box-shadow: 0 0 25px var(--color-cyan-400);
 }
