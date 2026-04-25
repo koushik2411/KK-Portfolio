@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { IoMailOpen } from 'react-icons/io5'
+import { SiFiverr } from 'react-icons/si'
 
 function Footer() {
     return (
@@ -14,8 +15,8 @@ function Footer() {
             <a href='https://www.facebook.com/koushik.kumar.52493499/' target='blank'>
                 <FaFacebook className='homeLinks'/>
             </a>
-            <a href='https://github.com/koushik2411' target='blank'>
-                <FaGithub className='homeLinks'/>
+            <a href='https://www.fiverr.com/koushik_kr?public_mode=true' target='blank'>
+                <SiFiverr className='homeLinks'/>
             </a>
             <a href='mailto:koushikrk1324@gmail.com' target='blank'>
                 <IoMailOpen className='homeLinks'/>
