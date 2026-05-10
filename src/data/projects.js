@@ -12,7 +12,7 @@ export const projects = [
        image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778402120/Screenshot_2026-05-10_135845_z3nnf3.png",
        name: "D-Buddy",
        category: "Frontend",
-       desc: "D-Buddy is a multi-component utility cum learning app which contains contents for every age-group of people. It has basic study materials for students, learn with fun contents for kids and spiritual contents for adults.",
+       desc: "D-Buddy is a multi-utility cum learning app which contains contents for every age-group of people. It has basic study materials for students, learn with fun contents for kids and spiritual contents for adults.",
        techStacks: "React, Tailwind CSS, Framer Motion, Canva",
        features: "Utility tools, Search bar, Dark mode, Learn with fun contents for kids, Basic GK for students, Spiritual contents for adults",
        viewLink: "https://d-buddy-app.vercel.app/",
