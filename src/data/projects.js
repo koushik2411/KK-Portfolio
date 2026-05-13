@@ -20,10 +20,10 @@ export const projects = [
     {
        image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778686250/Screenshot_2026-05-13_205857_ardccb.png",
        name: "Swiggy Clone",
-       category: "Full-Stack (MERN)",
+       category: "Frontend",
        desc: "Swiggy Clone is a clone of a famous food delivery app Swiggy. It contains some of the basic features along with the UI and UX feel similar to the original website.",
        techStacks: "React, Node.js, Express.js, MongoDB, Tailwind CSS, REST APIs, JWT, Canva",
-       features: "Browse restaurants, Authorization",
+       features: "-",
        viewLink: "https://swiggyv2.vercel.app/",
     },
     {
