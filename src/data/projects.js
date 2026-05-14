@@ -29,9 +29,9 @@ export const projects = [
     {
        image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1776620248/Screenshot_2026-04-19_230135_xyzxuq.png",
        name: "News App",
-       category: "Full-Stack (MERN)",
+       category: "Frontend",
        desc: "News App is a web app which fetches news from a free API. It also have a search bar where user can search news according to the keyword. Apart from this this web app has a dark toggle mode with sliding switch effect.",
-       techStacks: "React, Node.js, Express.js, Tailwind CSS, Free News API",
+       techStacks: "React, Tailwind CSS, Free News API",
        features: "Search bar, Dark toggle mode, Auto refreshed contents, Loader animation",
        viewLink: "https://news-app-v1-kk.vercel.app/",
     },

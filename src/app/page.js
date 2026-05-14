@@ -56,9 +56,11 @@ export default function Home() {
             </a>
           </div>
 
-          <button className=" mt-5 py-2 px-4 bg-linear-to-b from-cyan-400 to-cyan-600 text-slate-50 rounded-xl flex items-center gap-2 active:scale-[0.95] cursor-pointer">
-            Download Resume <FaDownload/>
-          </button>
+          <a href="/files/KOUSHIK KUMAR MANJHI- 2026.pdf" download>
+            <button className=" mt-5 py-2 px-4 bg-linear-to-b from-cyan-400 to-cyan-600 text-slate-50 rounded-xl flex items-center gap-2 active:scale-[0.95] cursor-pointer">
+              Download Resume <FaDownload/>
+            </button>
+          </a>
 
         </div>
 

@@ -65,7 +65,7 @@ function ContactPage() {
         </form>
 
         <div className=" p-5 flex flex-col gap-3">
-          <p className=" text-center text-xs text-red-400">
+          <p className=" text-center text-xs text-red-400 animate-pulse">
             Form is not working currently.
           </p>
           <p className=" text-xs text-cyan-100">
