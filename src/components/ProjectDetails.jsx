@@ -45,7 +45,7 @@ function ProjectDetails({ project, onClose }) {
             </p>
 
             <p>
-              <span className=" text-cyan-400">Tech Stacks:</span>{" "}
+              <span className=" text-cyan-400">Tech Stacks & Tools:</span>{" "}
               {project.techStacks}
             </p>
 

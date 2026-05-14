@@ -22,8 +22,8 @@ export const projects = [
        name: "Swiggy Clone",
        category: "Frontend",
        desc: "Swiggy Clone is a clone of a famous food delivery app Swiggy. It contains some of the basic features along with the UI and UX feel similar to the original website.",
-       techStacks: "React, Node.js, Express.js, MongoDB, Tailwind CSS, REST APIs, JWT, Canva",
-       features: "-",
+       techStacks: "React, Tailwind CSS, REST APIs, Canva",
+       features: "",
        viewLink: "https://swiggyv2.vercel.app/",
     },
     {
