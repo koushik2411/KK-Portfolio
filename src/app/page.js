@@ -1,65 +1,140 @@
-import Image from "next/image";
+"use client";
+
+import NavCards from "@/components/NavCards";
+import Link from "next/link";
+import { FaBookReader, FaLaptopCode, FaTools, FaUser, FaUserGraduate } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { IoLogoVercel } from "react-icons/io5";
+import { MdContactPhone } from "react-icons/md";
+import { SiGmail, SiNetlify } from "react-icons/si";
 
 export default function Home() {
+
+  const navCards = [
+    {
+      id: 1,
+      name: "About",
+      location: "/about",
+      icon: <FaUser/>,
+    },
+    {
+      id: 2,
+      name: "Skills",
+      location: "/skills",
+      icon: <FaTools/>,
+    },
+    {
+      id: 3,
+      name: "Trainings",
+      location: "/trainings",
+      icon: <FaBookReader/>,
+    },
+    {
+      id: 4,
+      name: "Certificates",
+      location: "/certificates",
+      icon: <FaUserGraduate/>,
+    },
+    {
+      id: 5,
+      name: "Projects",
+      location: "/projects",
+      icon: <FaLaptopCode/>,
+    },
+    {
+      id: 6,
+      name: "Contact",
+      location: "/contact",
+      icon: <MdContactPhone/>,
+    },
+  ];
+
+  {/* Template */}
+  // {
+  //     name: "",
+  //     location: "",
+  //     icon: "",
+  //   },
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <section className=" min-h-screen w-full p-4 flex flex-col lg:flex-row items-center lg:justify-center gap-10 bg-linear-to-b from-blue-50 to-blue-100 text-slate-900 dark:bg-linear-to-b dark:from-slate-900 dark:to-slate-900 dark:text-slate-100">
+      
+      {/* CONTAINER DIV */}
+      <div className=" lg:w-6/12 p-8 flex md:flex-row flex-col-reverse items-center justify-between gap-15 md:gap-25 lg:gap-15 lg:justify-center bg-slate-50 dark:bg-transparent rounded-2xl shadow-xl dark:shadow-none">
+
+        {/* LEFT DIV - Intro & Links */}
+        <div className=" flex flex-col gap-8 md:gap-12">
+
+          {/* Introduction */}
+          <div className=" flex flex-col gap-1.5">
+
+            <h3>
+              <span className=" font-semibold text-blue-500">Hello</span>, I am
+            </h3>
+
+            <h1 className=" text-2xl lg:text-4xl font-bold">
+              Koushik Kumar Manjhi
+            </h1>
+
+            <h2 className=" text-lg lg:text-2xl font-semibold">
+              I am a <span className=" text-blue-500">Full-Stack Developer</span>
+            </h2>
+
+          </div>
+
+          {/* Social Links */}
+          <div className=" flex justify-between lg:justify-start items-center lg:gap-5">
+
+            <a href="https://www.linkedin.com/in/koushik-kumar-1798251b9/" target="blank" className="home-links border dark:text-slate-400  hover:scale-[1.1] hover:text-blue-500 hover:shadow-blue-400 dark:hover:shadow transition-all">
+              <FaLinkedin/>
+            </a>
+
+            <a href="https://github.com/koushik2411" target="blank" className="home-links border dark:text-slate-400  hover:scale-[1.1] hover:text-blue-500 hover:shadow-blue-400 dark:hover:shadow transition-all">
+              <FaGithub/>
+            </a>
+
+            <a href="https://vercel.com/koushik27" target="blank" className="home-links border dark:text-slate-400  hover:scale-[1.1] hover:text-blue-500 hover:shadow-blue-400 dark:hover:shadow transition-all">
+              <IoLogoVercel/>
+            </a>
+
+            <a href="https://app.netlify.com/teams/koushikrk1324/projects" target="blank" className="home-links border dark:text-slate-400  hover:scale-[1.1] hover:text-blue-500 hover:shadow-blue-400 dark:hover:shadow transition-all">
+              <SiNetlify/>
+            </a>
+
+            <a href="mailto:koushikrk1324@gmail.com" target="blank" className="home-links border dark:text-slate-400  hover:scale-[1.1] hover:text-blue-500 hover:shadow-blue-400 dark:hover:shadow transition-all">
+              <SiGmail/>
+            </a>
+
+          </div>
+          
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* RIGHT DIV - Image */}
+        <div className="">
+          <img 
+            src="https://res.cloudinary.com/dcfjexbss/image/upload/q_auto/f_auto/v1767702578/327752_jvktop.jpg"
+            alt="kk"
+            className=" rounded-2xl"
+          />
         </div>
-      </main>
-    </div>
-  );
+
+      </div>
+
+      {/* SEPARATORS */}
+      <hr className=" h-1 w-[85vw] bg-slate-400 text-slate-400 dark:bg-blue-400 dark:text-blue-400 rounded-full lg:hidden"/>
+
+      <div className=" w-1 h-[70vh] bg-slate-400 dark:bg-blue-400 rounded-2xl hidden lg:flex"></div>
+
+      {/* NAVIGATION LINKS DIV */}
+      <nav className=" grid grid-cols-2 md:grid-cols-3 justify-items-center gap-5 md:gap-10 lg:grid-cols-3 lg:w-5/12">
+        
+        {navCards.map((opt) => (
+          <NavCards opt={opt} key={opt.id}/>
+        ))}
+      </nav>
+
+      <hr className=" h-1 w-[85vw] bg-slate-400 text-slate-400 dark:bg-blue-400 dark:text-blue-400 rounded-full lg:hidden"/>
+
+    </section>
+  )
 }
