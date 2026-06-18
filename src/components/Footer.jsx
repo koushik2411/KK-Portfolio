@@ -16,13 +16,15 @@ export default function Footer() {
 
         const updateCounter = async () => {
             try {
-                if (!localStorage.getItem("visited")) {
+
+                const hasVisited = localStorage.getItem("visited");
+
+                if (!hasVisited) {
                     await counter.up("first-counter-4503");
                     localStorage.setItem("visited", "true");
                 }
 
-                const result = await counter.up("first-counter-4503");
-                console.log(result);
+                const result = await counter.get("first-counter-4503");
 
                 setVisitors(result.data.up_count);
             } catch (error) {
