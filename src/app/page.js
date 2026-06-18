@@ -83,7 +83,7 @@ export default function Home() {
           </div>
 
           {/* Social Links */}
-          <div className=" flex justify-between lg:justify-start items-center lg:gap-5">
+          <div className=" flex justify-between lg:justify-start items-center gap-3 lg:gap-5">
 
             <a href="https://www.linkedin.com/in/koushik-kumar-1798251b9/" target="blank" className="home-links border dark:text-slate-400  hover:scale-[1.1] hover:text-blue-500 hover:shadow-blue-400 dark:hover:shadow transition-all">
               <FaLinkedin/>
