@@ -1,4 +1,13 @@
 export const projects = [
+     {
+       image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1782553082/Screenshot_2026-06-27_150138_pkf3td.png",
+       name: "DigiNotes",
+       category: "Full-Stack (MERN)",
+       desc: "DigiNotes App is a full-stack web app in which user can store notes, edit, delete, search note by title, and change the background colour of the note. It also has authorization so that one can store data in the database and access them securely.",
+       techStacks: "Next.js, React, Tailwind CSS, Node.js, MongoDB, JWT, bcrypt, framer motion",
+       features: "CRUD, Authorization, Dark toggle mode, Search bar, edit username, customize card background",
+       viewLink: "https://diginotes-kk.vercel.app/",
+    },
     {
        image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1781327310/Screenshot_2026-06-13_103637_d7tfap.png",
        name: "YouTube Clone",
