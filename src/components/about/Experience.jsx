@@ -27,7 +27,7 @@ export default function Experience() {
                     {experiences.map((item, index) => (
                         <div
                           key={index}
-                          className=" border rounded-xl lg:w-120 p-8 flex flex-col-reverse lg:flex-row gap-8 justify-between items-center relative overflow-hidden"
+                          className={` border rounded-xl lg:w-120 p-8 flex flex-col-reverse lg:flex-row gap-8 justify-between items-center relative overflow-hidden shadow-md ${item.category === "Internship" ? "bg-sky-950/10 border-sky-600/45" : "bg-teal-950/10 border-teal-600/45"}`}
                         >
                             
                             {/* Details */}

@@ -26,7 +26,7 @@ export default function BeyondCode() {
                     {hobbies.map((hobby, index) => (
                         <div
                           key={index}
-                          className=" border rounded-xl min-w-64 lg:min-w-120 p-8 flex flex-col-reverse lg:flex-row gap-4 justify-between items-center relative overflow-hidden"
+                          className=" border rounded-xl min-w-64 lg:min-w-120 p-8 flex flex-col-reverse lg:flex-row gap-4 justify-between items-center relative overflow-hidden shadow-md bg-lime-950/10 border-lime-600/45"
                         >
 
                             {/* Content */}

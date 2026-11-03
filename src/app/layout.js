@@ -3,6 +3,7 @@ import "./globals.css";
 import AnimatedBg from "@/components/layout/AnimatedBg";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "sonner";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -27,6 +28,14 @@ export default function RootLayout({ children }) {
         <Header/>
         
         {children}
+
+        <Toaster
+          position="top-right"
+          richColors
+          closeButton
+          theme="system"
+          duration={5000}
+        />
 
         <Footer/>
         

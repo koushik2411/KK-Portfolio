@@ -26,7 +26,7 @@ export default function Exploring() {
                     {explores.map((item, index) => (
                         <div
                           key={index}
-                          className=" border rounded-xl min-w-64 lg:w-120 p-8 flex flex-col-reverse lg:flex-row gap-4 justify-between items-center relative overflow-hidden"
+                          className=" border rounded-xl min-w-64 lg:w-120 p-8 flex flex-col-reverse lg:flex-row gap-4 justify-between items-center relative overflow-hidden shadow-md bg-cyan-950/10 border-cyan-600/45"
                         >
 
                             {/* Content */}

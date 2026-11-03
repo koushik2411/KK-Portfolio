@@ -14,7 +14,7 @@ export default function BriefIntro() {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.3, delay: 0.1 }}
-          className=" border border-violet-600/35 h-full w-full sm:w-md lg:max-w-sm p-3 rounded-2xl relative overflow-hidden backdrop-blur-md"
+          className=" border border-violet-600/35 h-full w-full sm:w-md lg:max-w-sm p-3 rounded-2xl relative overflow-hidden backdrop-blur-md shadow-md"
         >
 
             {/* Bubbles */}

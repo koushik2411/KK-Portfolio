@@ -64,7 +64,7 @@ export default function Projects() {
                         viewport={{ once: false }}
                         transition={{ duration: 0.5 }}  
                         key={index}
-                          className=" p-4 border border-violet-600/35 rounded-3xl relative overflow-hidden hover:scale-[1.02] hover:shadow-md shadow-violet-300 transition-all"
+                          className=" p-4 border border-violet-600/35 rounded-3xl relative overflow-hidden hover:scale-[1.02] shadow-md hover:shadow-violet-300 transition-all"
                         >
 
                             <img

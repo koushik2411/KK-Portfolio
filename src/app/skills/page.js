@@ -46,7 +46,7 @@ export default function Skills() {
                           whileInView={{ y: 0, opacity: 1 }}
                           transition={{ delay: 0.2, duration: 0.5 }}
                           viewport={{ once: false }}
-                          className=" border border-violet-200 p-4 lg:p-8 flex flex-col justify-between gap-4 lg:gap-8 rounded-lg hover:scale-[1.025] hover:shadow-md shadow-violet-300 hover:bg-violet-950/15 hover:border-violet-500 transition-all"
+                          className=" border border-violet-200 p-4 lg:p-8 flex flex-col justify-between gap-4 lg:gap-8 rounded-lg hover:scale-[1.025] shadow-md hover:shadow-violet-300 hover:bg-violet-950/15 hover:border-violet-500 transition-all"
                         >
                             <div className=" flex items-center justify-between">
 
