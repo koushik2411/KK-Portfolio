@@ -41,13 +41,13 @@ export default function Projects() {
             <main>
 
                 {/* Category bar */}
-                <div className=" w-full p-3 py-4 lg:py-6 flex items-center justify-center gap-4 overflow-auto border-b-2 whitespace-nowrap transition-all">
+                <div className=" w-full min-w-0 p-3 py-4 lg:py-6 flex items-center justify-start sm:justify-center gap-4 overflow-auto border-b-2 whitespace-nowrap transition-all">
 
                     {projectCategories.map((item, index) => (
                         <button
                           key={index}
                           onClick={() => setActiveCategory(item)}
-                          className={` border w-full h-fit p-2 px-8 rounded-3xl cursor-pointer ${activeCategory.includes(item) ? " bg-linear-to-b from-blue-500 to-violet-500 border-0" : "hover:text-blue-500 transition-all hover:bg-blue-800/10 hover:scale-[1.02]" }`}
+                          className={` border shrink-0 h-fit p-2 px-8 rounded-3xl cursor-pointer ${activeCategory.includes(item) ? " bg-linear-to-b from-blue-500 to-violet-500 border-0" : "hover:text-blue-500 transition-all hover:bg-blue-800/10 hover:scale-[1.02]" }`}
                         >
                             {item}
                         </button>

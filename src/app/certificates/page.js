@@ -23,7 +23,7 @@ export default function Certificates() {
             <main className=" w-full min-w-0">
 
                 {/* - - - Categories - - - */}
-                <div className=" shrink-0 p-3 py-4 lg:py-6 flex items-center justify-center gap-4 overflow-x-auto border-b-2 whitespace-nowrap transition-all">
+                <div className=" w-full min-w-0 p-3 py-4 lg:py-6 flex items-center justify-start sm:justify-center gap-4 overflow-x-auto border-b-2 whitespace-nowrap transition-all">
 
                     {certificateCategories.map((item,index) => (
                         <button
