@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f8f9ff;
   --foreground: #171717;
+  --glow-blue: 99, 132, 255;
+  --glow-purple: 190, 130, 255;
+  --glow-opacity: 0.24;
+}
+
+.dark {
+  --background: #03040b;
+  --foreground: #f7f7f7;
+  --glow-blue: 61, 86, 199;
+  --glow-purple: 135, 70, 199;
+  --glow-opacity: 0.35;
 }
 
 @theme inline {
@@ -22,5 +33,66 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* - - - Animated Background - - - */
+.animatedBg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+  background: var(--background);
+  transition: background 0.4s ease;
+}
+
+.glow {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: float 12s ease-in-out infinite alternate;
+  transition: background 0.4s ease, opacity 0.4s ease;
+  opacity: var(--glow-opacity);
+}
+
+.glow-blue {
+  background: rgb(var(--glow-blue));
+  top: 5%;
+  left: 10%;
+}
+
+.glow-purple {
+  background: rgb(var(--glow-purple));
+  right: 10%;
+  bottom: 5%;
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(100px, 60px) scale(1.2);
+  }
+}
+
+
+/* - - - Buttons - - - */
+button:active {
+  scale: 0.97;
+}
+
+
+/* - - - Scroll bar hide - - - */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
