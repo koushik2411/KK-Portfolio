@@ -52,35 +52,40 @@ export default function BriefIntro() {
                 <div className=" p-6 flex flex-col gap-5">
 
                     <a
-                      href=""
+                      href="https://www.linkedin.com/in/koushik-kumar-1798251b9/"
+                      target="blank"
                       className=" flex items-center gap-3"
                     >
                         <span className=" text-blue-400  p-2 text-xl border rounded-full" ><FaLinkedinIn/></span> LinkedIn
                     </a>
                     
                     <a
-                      href=""
+                      href="mailto:koushikrk1324@gmail.com"
+                      target="blank"
                       className=" flex items-center gap-3"
                     >
                         <span className=" text-yellow-300  p-2 text-xl border rounded-full"><IoMdMailOpen /></span> E-mail
                     </a>
 
                     <a
-                      href=""
+                      href="https://wa.me/7542805733"
+                      target="blank"
                       className=" flex items-center gap-3"
                     >
                         <span className=" text-green-700  p-2 text-xl border rounded-full" ><IoLogoWhatsapp/></span> WhatsApp
                     </a>
 
                     <a
-                      href=""
+                      href="https://www.instagram.com/koushikkr_8?igsh=MW8zaWV1NTUzeHB0Mw=="
+                      target="blank"
                       className=" flex items-center gap-3"
                     >
                         <span className=" text-pink-500  p-2 text-xl border rounded-full" ><GrInstagram/></span> Instagram
                     </a>
 
                     <a
-                      href=""
+                      href="https://www.facebook.com/share/1AqqiFL4eq/"
+                      target="blank"
                       className=" flex items-center gap-3"
                     >
                         <span className=" text-blue-600  p-2 text-xl border rounded-full" ><FaFacebookF/></span> Facebook
