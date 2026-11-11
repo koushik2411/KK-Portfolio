@@ -78,6 +78,7 @@ export default function Hero() {
                         <a
                           key={index}
                           href={item.url}
+                          target="blank"
                           className=" flex flex-col items-center gap-1 sm:gap-3 hover:scale-[1.05] transition-all"
                         >
                             <h2  

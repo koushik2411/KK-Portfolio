@@ -33,7 +33,7 @@ export default function Menu() {
             {/* - - - CTA buttons - - - */}
             <div className=" flex items-center justify-end gap-3">
 
-                <a>
+                <a href="KOUSHIK KUMAR MANJHI.pdf" target="blank">
                     <button
                       className=" py-1.5 px-4 hidden sm:flex items-center gap-1.5 rounded-3xl hover:bg-linear-to-br hover:from-blue-500 hover:to-purple-600 cursor-pointer transition-all"
                     >
@@ -78,7 +78,7 @@ export default function Menu() {
                         <Link href="/certificates" className={` flex items-center gap-2.5 ${pathname.includes("certificates") ? " border border-r-6 p-3 rounded-3xl text-blue-400" : ""}`}><FaUserGraduate/> Certificates</Link>
                         <Link href="/contact" className={` flex items-center gap-2.5 ${pathname.includes("contact") ? " border border-r-6 p-3 rounded-3xl text-blue-400" : ""}`}><IoCall/> Contact</Link>
 
-                        <a>
+                        <a href="KOUSHIK KUMAR MANJHI.pdf" target="blank">
                             <button
                               className=" mt-4 w-full py-3 flex items-center justify-center gap-2 rounded-3xl bg-linear-to-b from-blue-500 to-purple-600 cursor-pointer transition-all"
                             >
