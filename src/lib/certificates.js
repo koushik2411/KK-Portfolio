@@ -33,13 +33,13 @@ export const certificates = [
     {
         title: "Next.js: Creating and Hosting a FullStack Site",
         provider: "LinkedIn Learning",
-        image: "https://media.licdn.com/dms/image/v2/D4D2DAQEy_8pRRRUtqQ/profile-treasury-document-images_800/B4DaBWPuCUKUAc-/1/1788153357205?e=1794441600&v=beta&t=r__g_oAsaWPTvM_GT0HK3NpvmYn5TaxpZN4ZQwE2CEw",
+        image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1794456742/Next.js_certificate_oi1wen.png",
         category: "Course Certificate"
     },
     {
         title: "Generative AI for Web Developers: AI Powered Pair Programming for Full Stack Development",
         provider: "LinkedIn Learning",
-        image: "https://media.licdn.com/dms/image/v2/D4D2DAQGGP7xFeBV3OQ/profile-treasury-document-cover-images_480/B4DaAZ7kQaKwA0-/0/1787141441350?e=1793941200&v=beta&t=1_0AuD3pkG7YlvbU6T5gHEdGfC0Q2B1DrIyOnOa6d9c",
+        image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1794456742/genAI_certificate_h9igmw.png",
         category: "Course Certificate"
     },
     {
